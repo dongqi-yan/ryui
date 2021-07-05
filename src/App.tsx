@@ -2,9 +2,11 @@ import React from 'react';
 import Button, { ButtonType, ButtonSize} from './components/Button';
 import Alert from './components/Alert';
 import Menu from './components/Menu';
+import UserForm from './userForm';
 const { MenuItem, SubMenu } = Menu;
 
 const App: React.FC<any> = (props) => {
+
   return (
     <div className="App">
       <header style={{padding: '0 10px'}}>
@@ -34,6 +36,8 @@ const App: React.FC<any> = (props) => {
       </Button>
       <br />
       <Alert message='alert' description='description' closable type='warning'/>
+      <br />
+      <UserForm />
     </div>
   );
 }
