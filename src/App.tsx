@@ -1,8 +1,9 @@
 import React from 'react';
-import Button, { ButtonType, ButtonSize} from './components/Button';
+import Button, { ButtonType} from './components/Button';
 import Alert from './components/Alert';
 import Menu from './components/Menu';
 import UserForm from './userForm';
+import Icon from './components/Icon';
 const { MenuItem, SubMenu } = Menu;
 
 const App: React.FC<any> = (props) => {
@@ -25,10 +26,10 @@ const App: React.FC<any> = (props) => {
       <hr />
       <Button disabled>disabled</Button>
       <Button>default</Button>
-      <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
+      <Button btnType={ButtonType.Primary} size='lg'>
         PL
       </Button>
-      <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>
+      <Button btnType={ButtonType.Danger} size='sm'>
         PL
       </Button>
       <Button btnType={ButtonType.Link} href='http://www.baidu.com'> 
@@ -38,6 +39,8 @@ const App: React.FC<any> = (props) => {
       <Alert message='alert' description='description' closable type='warning'/>
       <br />
       <UserForm />
+      <br />
+      <Icon icon='coffee' theme='danger' size='10x' />
     </div>
   );
 }

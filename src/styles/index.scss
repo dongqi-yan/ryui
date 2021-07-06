@@ -4,9 +4,12 @@
 @import 'reboot';
 // mixin
 @import 'mixin';
+@import './animation';
 // Button
 @import '../components/Button/style';
 // Alert
 @import '../components/Alert/style';
 // Menu
 @import '../components/Menu/style';
+// Icon
+@import '../components/Icon/style';

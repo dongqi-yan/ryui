@@ -2,10 +2,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-export enum ButtonSize {
-  Large = 'lg',
-  Small = 'sm'
-}
+type ButtonSize = 'lg' | 'sm' | 'md';
 
 export enum ButtonType {
   Primary = 'primary',
@@ -67,7 +64,8 @@ const Button: React.FC<ButtonProps> = (props) => {
 
 Button.defaultProps = {
   disabled: false,
-  btnType: ButtonType.Default
+  btnType: ButtonType.Default,
+  size: 'md'
 }
 
 export default Button;
